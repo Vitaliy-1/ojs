@@ -16,16 +16,14 @@
 		},
 		"doiObject": {
 			"type": "object",
-			"description": "DOI object for this galley",
+			"description": "An object representing the DOI for this galley.",
 			"apiSummary": true,
 			"readOnly": true,
-			"items": {
-				"$ref": "#/definitions/Doi"
-			}
+			"$ref": "#/definitions/Doi"
 		},
 		"doiId": {
 			"type": "integer",
-			"description": "Reference to the DOI for this galley",
+			"description": "The ID of the DOI to assign to this galley.",
 			"writeOnly": true,
 			"validation": [
 				"nullable"
